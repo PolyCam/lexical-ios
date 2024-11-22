@@ -107,7 +107,15 @@ let package = Package(
       name: "EditorHistoryPluginTests",
       dependencies: ["Lexical", "EditorHistoryPlugin"],
       path: "./Plugins/EditorHistoryPlugin/EditorHistoryPluginTests"),
-
+    
+    .target(
+        name: "LexicalMentions",
+        dependencies: [
+            "Lexical"
+        ],
+        path: "./Plugins/LexicalMentionsPlugin/LexicalMentionsPlugin"
+    ),
+    
     .target(
       name: "LexicalMarkdown",
       dependencies: [
